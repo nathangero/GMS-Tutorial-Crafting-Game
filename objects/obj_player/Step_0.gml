@@ -25,3 +25,18 @@ if (_length != 0) {
 // Move the object
 x += move_x;
 y += move_y;
+
+if (move_y > 1) {
+	sprite_index = spr_player_move_down	
+	
+} else if (move_y < 1) {
+	// TODO: this will be player move up
+	sprite_index = spr_player_idle	
+} else if (move_x != 0) {
+	// TODO: this will be player move side
+	sprite_index = spr_player_idle	
+	
+	
+} else {
+	sprite_index = spr_player_idle	
+}
