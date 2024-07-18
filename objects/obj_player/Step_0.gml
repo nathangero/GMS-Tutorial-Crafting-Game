@@ -14,8 +14,8 @@ var _input_y = _down - _up;
 var _length = sqrt(sqr(_input_x) + sqr(_input_y))
 if (_length != 0) {
 	// Normalize the movement vector when moving diagonal
-	move_x = (_input_x / _length) * move_speed;
-	move_y = (_input_y / _length) * move_speed;
+	move_x = round(_input_x / _length) * move_speed;
+	move_y = round(_input_y / _length) * move_speed;
 } else {
 	// Movement is not diagonal
 	move_x = _input_x * move_speed;
@@ -26,17 +26,21 @@ if (_length != 0) {
 x += move_x;
 y += move_y;
 
+show_debug_message("move x:" + string(move_x));
+show_debug_message("move y:" + string(move_y));
+
+
 if (move_y > 1) {
 	sprite_index = spr_player_move_down	
 	
-} else if (move_y < 1) {
-	// TODO: this will be player move up
-	sprite_index = spr_player_idle	
+} else if (move_y < 0) {
+	sprite_index = spr_player_move_up
+	
 } else if (move_x != 0) {
 	// TODO: this will be player move side
-	sprite_index = spr_player_idle	
+	sprite_index = spr_player_front_idle	
 	
 	
 } else {
-	sprite_index = spr_player_idle	
+	sprite_index = spr_player_front_idle	
 }
