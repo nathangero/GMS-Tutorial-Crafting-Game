@@ -29,19 +29,18 @@ y += move_y;
 
 if (move_y > 1) {
 	sprite_index = spr_player_move_down	
-	last_direction = spr_player_idle_down
+	idle_direction = spr_player_idle_down
 	
 } else if (move_y < 0) {
 	sprite_index = spr_player_move_up
-	last_direction = spr_player_idle_up
+	idle_direction = spr_player_idle_up
 	
 } else if (move_x != 0) {
 	// TODO: this will be player move side
 	sprite_index = spr_player_idle_down	
-	last_direction = spr_player_idle_down
+	idle_direction = spr_player_idle_down
 	
 	
 } else {
-	sprite_index = last_direction;
-	
+	sprite_index = idle_direction;
 }

@@ -6,4 +6,4 @@ move_x = 0;
 move_y = 0;
 
 /// Keeps track of the idle sprite depending on the direction the player last moved to
-last_direction = spr_player_idle_down;
+idle_direction = spr_player_idle_down;
