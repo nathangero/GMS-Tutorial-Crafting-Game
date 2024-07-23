@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
+  "%Name":"obj_bush",
   "eventList":[],
   "managed":true,
-  "name":"obj_wall",
+  "name":"obj_bush",
   "overriddenProperties":[],
   "parent":{
     "name":"world",
     "path":"folders/Objects/world.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_breakable_parent",
+    "path":"objects/obj_breakable_parent/obj_breakable_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wall",
-    "path":"sprites/spr_wall/spr_wall.yy",
+    "name":"spr_bush",
+    "path":"sprites/spr_bush/spr_bush.yy",
   },
   "spriteMaskId":null,
   "visible":true,
