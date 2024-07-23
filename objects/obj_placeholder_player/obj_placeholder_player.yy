@@ -34,6 +34,9 @@
     "name":"spr_placeholder_player",
     "path":"sprites/spr_placeholder_player/spr_placeholder_player.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_placeholder_player",
+    "path":"sprites/spr_placeholder_player/spr_placeholder_player.yy",
+  },
   "visible":true,
 }
