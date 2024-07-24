@@ -36,4 +36,15 @@ if (collision(x, y + move_y)) {
 x += move_x;
 y += move_y;
 
+if (move_x != 0) {
+	if (move_x > 0) {
+		// If moving right
+		image_xscale = 1;
+	} else {
+		// Moving left
+		image_xscale = -1;
+	}
+	
+}
+
 sprite_index = spr_placeholder_player	
