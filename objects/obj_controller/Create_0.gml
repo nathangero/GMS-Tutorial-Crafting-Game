@@ -3,7 +3,7 @@
 // Resolution
 enum RES {
 	WIDTH = 320, // Width of camera
-	HEIGHT = 180, // Height of camera
+	HEIGHT = 250, // Height of camera
 	SCALE = 4, // The scale of the camera will be scale x (width x height)
 }
 
