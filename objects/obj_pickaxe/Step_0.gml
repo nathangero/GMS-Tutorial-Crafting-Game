@@ -17,6 +17,9 @@ with (_breakable) {
 	var _dist = distance_to_object(obj_placeholder_player);
 	
 	if (_dist < other.break_distance) {
+		// Set selected object
+		other.selector_instance = id;
+		
 		if (other.cooldown == 0 && _mouse_click_left) {
 			// Reduce hp
 			hp--;

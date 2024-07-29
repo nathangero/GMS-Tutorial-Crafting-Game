@@ -55,6 +55,7 @@
     {"id":{"name":"spr_player_idle_up","path":"sprites/spr_player_idle_up/spr_player_idle_up.yy",},},
     {"id":{"name":"spr_player_move_down","path":"sprites/spr_player_move_down/spr_player_move_down.yy",},},
     {"id":{"name":"spr_player_move_up","path":"sprites/spr_player_move_up/spr_player_move_up.yy",},},
+    {"id":{"name":"spr_selector","path":"sprites/spr_selector/spr_selector.yy",},},
     {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
   ],
